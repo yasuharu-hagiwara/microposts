@@ -9,4 +9,5 @@ class User < ActiveRecord::Base
 #課題1
   validates :region, presence: false ,  length: { maximum: 30 }
   validates :profile, presence: false , length: { maximum: 100 }
+  has_many :microposts
 end
