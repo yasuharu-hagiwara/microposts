@@ -1,0 +1,12 @@
+  <p>
+    <%= @following_follower_users.count %> 人
+  </p>
+  
+  
+  <% @following_follower_users.each do |i| %>
+    <p>
+        <%= gravatar_for(i,size: 50) %>
+        <%= link_to i.name, i %>
+        <br clear="left">
+    </p>
+  <% end %>
